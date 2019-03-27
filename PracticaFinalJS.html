@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>JS – Práctica final - Generador de formularios</title>
+    <style media="all">
+        .botones{
+            text-decoration: none;
+            padding: 5px;
+            font-weight: bold;
+            font-size: 20px;
+            color: #ffffff;
+            background-color: #1883ba;
+            border-radius: 6px;
+            border: 2px solid #0016b0;
+        }
+        .botones:hover{
+            color: #1883ba;
+            background-color: #ffffff;
+        }
+
+        .prop-texto, .prop-lista {
+            display: none;
+            margin-top: 25px;
+            background-color: aquamarine;
+        }
+        .cCampos {
+            width: 100%;
+            min-width: 1200px;
+        }
+        [type="number"] {
+            width: 40px;
+        }
+    </style>
+    <script defer type="text/javascript" src="./javascript.js"></script>
+</head>
+<body>
+    <h1>Generador de formularios</h1>
+    <div class="cCampos">
+        <a id="texto" class="botones">Campo de texto</a>
+        <a id="numerico" class="botones">Campo numérico</a>
+        <a id="email" class="botones">Campo email</a>
+        <a id="lista" class="botones">Lista seleción</a>
+        <a id="check" class="botones">Campo opciones no exclusivas</a>
+        <a id="opcion" class="botones">Campo opciones exclusivas</a>
+    </div>
+    <div class="prop-texto">
+        <label for="Nombre">Nombre del campo:</label> <input type="text" name="Nombre" id="Nombre" required>
+        <a href="#" class="botones">Aceptar</a>
+    </div>
+    <div class="prop-lista">
+        <label for="NombreLista">Nombre del campo:</label> <input type="text" name="NombreLista" id="NombreLista" required>
+        <label for="Cantidad">Número de opciones</label> <input type="number" id="Cantidad" onchange="ListChange(event)" name="Cantidad" min="1" step="1">
+        <a href="#" class="botones">Aceptar</a>
+    </div> 
+    <div class="formulario">
+
+    </div>
+</body>
+</html>
