@@ -9,7 +9,7 @@ Generador de formularios realizado en Javascript:
     - INPUT CHECKBOX
     - INPUT RADIO
     - SELECT
-
+    
   Esos campos se pueden configurar con los siguientes parametros:
     - LABEL
       * TEXTO DE LA ETIQUETA
